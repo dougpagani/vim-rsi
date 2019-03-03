@@ -68,7 +68,8 @@ if !has("gui_running") && !has('nvim')
   silent! exe "set <S-Right>=\<Esc>f"
   silent! exe "set <F31>=\<Esc>d"
   silent! exe "set <F32>=\<Esc>n"
-  silent! exe "set <F33>=\<Esc>p"
+  " Breaks <leader>-p-bindings
+  "silent! exe "set <F33>=\<Esc>p"
   silent! exe "set <F34>=\<Esc>\<C-?>"
   silent! exe "set <F35>=\<Esc>\<C-H>"
   map! <F31> <M-d>
@@ -84,3 +85,4 @@ if !has("gui_running") && !has('nvim')
 endif
 
 " vim:set et sw=2:
+
